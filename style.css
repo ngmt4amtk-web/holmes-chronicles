@@ -38,6 +38,7 @@
 .chapter-menu{margin:20px 0}.chapter-menu summary{cursor:pointer;padding:12px 0;font-size:14px}.chapter-list{display:grid;gap:6px;margin:8px 0 18px}.chapter-list button{padding:12px;text-align:left;border:1px solid #69755e70;font-size:14px;line-height:1.7;overflow-wrap:anywhere}.chapter-list small{display:block;font-size:11px;color:var(--muted);margin-bottom:3px}
 
 /* Small animals stand above the dialogue instead of using the human crop. */
+.character:not(.animal):not(.ground){transform:translateX(-50%) scale(calc(var(--actor-scale,1) * 1.15));filter:none}
 .character.animal{top:auto;bottom:12px;height:calc((100% + 190px) * var(--actor-scale,.38));min-height:0;max-height:calc(100% - 44px);max-width:92%;transform:translateX(-50%);object-position:bottom center}
 /* Floor poses retain their full silhouette above the text, with headroom. */
 .character.ground{top:auto;bottom:12px;height:auto;width:auto;min-height:0;max-height:calc(100% - 44px);max-width:92%;transform:translate(-50%,var(--ground-shift,0%));object-position:bottom center}
